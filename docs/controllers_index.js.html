@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  tracking-code-which-will-go-to-the-HEAD
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digichat API Web Server controllers/index.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Sample Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/SoftwareBrothers/admin-bro"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://admin-bro-example-app-staging.herokuapp.com/admin"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="GroupController.html">GroupController</a></li><li><a href="UserController.html">UserController</a></li></ul><h3>Global</h3><ul><li><a href="global.html#choseIncludeOptions">choseIncludeOptions</a></li><li><a href="global.html#commentAuthor">commentAuthor</a></li><li><a href="global.html#groupMembers">groupMembers</a></li><li><a href="global.html#groupPosts">groupPosts</a></li><li><a href="global.html#postAuthor">postAuthor</a></li><li><a href="global.html#postComments">postComments</a></li><li><a href="global.html#userGroups">userGroups</a></li><li><a href="global.html#userPosts">userPosts</a></li></ul></div><div class="category"><h2>Services</h2><h3>Modules</h3><ul><li><a href="module-Controllers.html">Controllers</a></li><li><a href="module-Errors.html">Errors</a></li><li><a href="module-GroupErrors.html">GroupErrors</a></li><li><a href="module-Queries.html">Queries</a></li><li><a href="module-UserErrors.html">UserErrors</a></li></ul><h3>Classes</h3><ul><li><a href="Errors_GenericError.html">GenericError</a></li><li><a href="FriendshipQueries.html">FriendshipQueries</a></li><li><a href="GroupQueries.html">GroupQueries</a></li><li><a href="MembershipQueries.html">MembershipQueries</a></li><li><a href="module-Errors_GroupErrors.GroupNotFound.html">GroupNotFound</a></li><li><a href="module-Errors_UserErrors.IncorrectPasswordError.html">IncorrectPasswordError</a></li><li><a href="module-Errors_UserErrors.UserError.html">UserError</a></li><li><a href="module-Errors_UserErrors.UserExistsError.html">UserExistsError</a></li><li><a href="module-Errors_UserErrors.UserLoginError.html">UserLoginError</a></li><li><a href="module-Errors_UserErrors.UserNotFoundError.html">UserNotFoundError</a></li><li><a href="UserQueries.html">UserQueries</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>controllers/index.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const GroupController = require('./GroupController');
+const UserController = require('./UserController');
+
+/** 
+ * @category Services 
+ * @exports Controllers
+ */
+module.exports = {
+  /** @type {GroupController} */ GroupController,
+  /** @type {UserController} */ UserController,
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

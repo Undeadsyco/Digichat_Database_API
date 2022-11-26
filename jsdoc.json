@@ -1,0 +1,46 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  } ,
+  "source": {
+    "include": ["services"],
+    "includePattern": "\\.(jsx|js|ts|tsx)$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/better-docs/typescript",
+    "node_modules/better-docs/typedef-import",
+    "node_modules/better-docs/category",
+    "node_modules/jsdoc-typeof-plugin"
+  ],
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "template": "node_modules/better-docs"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "search": true,
+    "better-docs": {
+      "name": "Sample Documentation",
+      "logo": "",
+      "title": "Digichat API Web Server",
+      "css": "style.css",
+      "trackingCode": "tracking-code-which-will-go-to-the-HEAD",
+"hideGenerator": false,
+      "navLinks": [
+          {
+              "label": "Github",
+              "href": "https://github.com/SoftwareBrothers/admin-bro"
+          },
+          {
+              "label": "Example Application",
+              "href": "https://admin-bro-example-app-staging.herokuapp.com/admin"
+          }
+      ]
+  }
+  },
+  "recurseDepth": 10
+}
