@@ -37,7 +37,7 @@ const groupPosts = {
 }
 
 /** @type {includeObj} */
-const groupMembers = {
+const userGroups = {
   model: models.users,
   as: 'members'
 }
@@ -53,7 +53,7 @@ const userPosts = {
 }
 
 /** @type {includeObj} */
-const userGroups = {
+const groupMembers = {
   model: models.groups,
   as: 'userGroups',
 }

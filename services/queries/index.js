@@ -24,6 +24,8 @@ const GroupQueries = require('./GroupQueries');
 const MembershipQueries = require('./MembershipQueries');
 const UserQueries = require('./UserQueries');
 const FriendshipQueries = require('./FriendshipQueries');
+const PostQueries = require('./PostQueries');
+const CommentQueries = require('./CommentQueries');
 
 /**
  * @namespace Queries
@@ -36,4 +38,6 @@ module.exports = {
   /** @type {MembershipQueries} */ MembershipQueries,
   /** @type {UserQueries} */ UserQueries,
   /** @type {FriendshipQueries} */ FriendshipQueries,
+  /** @type {PostQueries} */ PostQueries,
+  /** @type {CommentQueries} */ CommentQueries,
 }

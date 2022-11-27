@@ -13,3 +13,5 @@ const signUser = ({ verifieduser, error }, req, res, next) => {
     res.json({ errMessage: error.message }).status(500);
   }
 }
+
+module.exports = signUser;

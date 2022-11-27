@@ -6,6 +6,7 @@
 /** @typedef {import('.').findOrCreateReturnObj} findOrCreateReturnObj */
 
 const choseIncludeOptions = require('./includeObjs');
+const models = require('../../models');
 
 /** 
  * @namespace UserQueries
@@ -42,7 +43,7 @@ class UserQueries {
    */
   static findOneUser = async (whereParam) => await models.users.findOne({
     where: whereParam,
-    include: choseIncludeOptions({ user: { posts: true, groups: true }}),
+    // include: choseIncludeOptions({ user: { posts: true, groups: true }}),
   });
 
   /**

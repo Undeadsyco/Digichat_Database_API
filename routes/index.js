@@ -6,11 +6,10 @@ const posts = require('./posts/post');
 const comments = require('./comments/comment');
 
 const { UserController } = require('../services/controllers');
-const { verifyUser } = require('../services/middleware');
+const { verifyUser, signUser } = require('../services/middleware');
 
 router.get('/', (_, res) => { res.send('connected to api'); });
 
-//inUse
 router.post('/signup', UserController.createUser, signUser);
 router.get('/login', verifyUser, UserController.verifyUser);
 router.post('/login', UserController.loginUser, signUser);
